@@ -12,4 +12,6 @@ For the number it uses Diego Salazars function (https://gist.github.com/DiegoSal
 
 
 
+https://10d-ndidi.github.io/Javascript-Credit-Card/
+
 
