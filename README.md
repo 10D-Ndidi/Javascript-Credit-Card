@@ -12,6 +12,12 @@ For the number it uses Diego Salazars function (https://gist.github.com/DiegoSal
 
 
 
+Test Valid Credit Card numbers with free-formatter's credit card generator
+https://freeformatter.com/credit-card-number-generator-validator.html
+
+
+
+Demo Here:
 https://10d-ndidi.github.io/Javascript-Credit-Card/
 
 
