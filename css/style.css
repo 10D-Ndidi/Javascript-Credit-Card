@@ -1,0 +1,177 @@
+cvv* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #abddba;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    color: #3b3b3b;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    color: #7f7f7f;
+    font-size: 1.125em;
+    font-weight: 300;
+    margin: 0;
+}
+
+    h2 span.active{
+        color: #88c49a;
+        transition: all .3s ease;
+    }
+
+.card-container {
+    background-color: #fff;
+    width: 45.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    box-shadow: 0px 70px 50px 16px rgba(56, 56, 56, 0.3607843137);
+}
+
+    .card-container header,
+    .card-container main,
+    .card-container footer {
+        padding: 3.75em;
+    }
+
+    .card-container header {
+        border-bottom: 1px solid #ececec;
+        padding-bottom: 2em;
+    }
+
+    .card-container main {
+        padding-bottom: 0;
+    }
+
+    .card-container footer {
+        padding-top: 0;
+        color: #7f7f7f;
+        font-size: .75em;
+        text-align: center;
+    }
+
+form {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+
+    form label {
+        color: #bababa;
+        font-size: .75em;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: .5em;
+    }
+.input-fields-container {
+    margin-bottom: 3.75em;
+    float: left;
+}
+
+    .input-fields-container:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+.cc-input {
+    max-width: 100%;
+    color: #3b3b3b;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid #ececec;
+    padding-bottom: .5em;
+}
+
+    .cc-input:focus {
+        border-bottom-color: #3b3b3b;
+        transition: all .5s ease;
+    }
+
+    .cc-input.error {
+        border-bottom-color: #bd4b3a;
+        color: #bd4b3a;
+        transition: all .5s ease;
+    }
+
+#cc-number-container,
+#cc-expiration-date-container,
+#cc-cvv-container {
+    float: left;
+    margin-right: 2em;
+}
+
+#cc-expiration-date-container,
+#cc-cvv-container {
+    display: none;
+}
+
+#cc-number {
+    width: 17em;
+    padding-left: 3em;
+    background-color: #fff;
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+}
+#cc-expiration-date {
+    width: 8em;
+}
+#cc-cvv {
+    width: 6em;
+}
+
+#cc-cvv-container {
+    margin-right: 0;
+}
+
+.cc-generic #cc-number {
+    background-image: url('../img/cc-generic.svg');
+}
+.cc-visa #cc-number {
+    background-image: url('../img/cc-visa.svg');
+}
+.cc-mastercard #cc-number {
+    background-image: url('../img/cc-mastercard.svg');
+}
+.cc-amex #cc-number {
+    background-image: url('../img/cc-amex.svg');
+}
+
+#submit-payment {
+    background-color: #3993cd;
+    border: 1px solid #286790;
+    border-radius: 50px;
+    height: 3.5em;
+    text-align: center;
+    font-size: 1.124em;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 3.5em;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+
+    #submit-payment:not(.disabled):hover {
+        background-color: #286790;
+        transition: all .5s ease;
+    }
+
+.disabled {
+    cursor: default;
+    opacity: .4;
+}
